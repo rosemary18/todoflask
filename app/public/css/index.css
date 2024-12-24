@@ -1,0 +1,154 @@
+/* Mengatur body dengan tema malam */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur kontainer utama */
+.content {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Mengatur heading */
+h1 {
+    font-size: 36px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #bbb;
+}
+
+/* Mengatur tabel */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #252525;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+table th, table td {
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #444;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header tabel dengan warna gelap dan oranye cerah */
+table th {
+    background-color: #333;
+    color: #ff9800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Gaya untuk baris tabel */
+table td {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+table tr:nth-child(even) td {
+    background-color: #383838;
+}
+
+/* Hover efek untuk baris tabel */
+table tr:hover {
+    background-color: #4a4a4a;
+    transform: scale(1.02);
+}
+
+/* Hover efek pada kolom aksi */
+table td a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+table td a:hover {
+    color: #f57c00;
+}
+
+/* Styling untuk form input */
+.form {
+    margin-top: 20px;
+}
+
+.form input[type="text"] {
+    width: calc(100% - 150px);
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.form input[type="submit"] {
+    background-color: #ff9800;
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #f57c00;
+}
+
+/* Responsif - Mengatur tata letak di perangkat kecil */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .form input[type="text"] {
+        width: calc(100% - 100px);
+    }
+
+    .form input[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.back {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.back:hover {
+    color: #f57c00;
+}
